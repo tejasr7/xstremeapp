@@ -65,35 +65,7 @@ class SignupActivity : AppCompatActivity() {
                             signup_progressbar.visibility = View.INVISIBLE
                             Toast.makeText(this@SignupActivity, response.body()?.message, Toast.LENGTH_LONG).show()
                         }
-//                            signup_progressbar.visibility = View.INVISIBLE
-//                        Toast.makeText(this@SignupActivity, response.body()?.message, Toast.LENGTH_LONG).show()
-                    }
-                })
-//            val call: Call<ResponseBody>? = RetrofitClient()
-//                .getInstance()
-//                ?.getApi()
-//                ?.registerUser(username, email, password)
 
-//            call?.enqueue(object:Callback<ResponseBody> {
-//                override fun onResponse(call:Call<ResponseBody>, response: Response<ResponseBody>) {
-//                    try {
-//                        val s = response.body()?.string()
-//                        Toast.makeText(this@SignupActivity, s, Toast.LENGTH_LONG).show()
-//                    } catch (e: IOException) {
-//                        e.printStackTrace()
-//                    }
-////                    if (response.code() === 201) {
-////                        val dr = response.body()
-////                        Toast.makeText(this@SignupActivity, dr.getMsg(), Toast.LENGTH_LONG).show()
-////                    }
-////                    else if (response.code() === 422) {
-////                        Toast.makeText(this@SignupActivity, "User already exist", Toast.LENGTH_LONG).show()
-////                    }
-//                }
-//                override fun onFailure(call:Call<ResponseBody>, t:Throwable) {
-//                    Toast.makeText(this@SignupActivity, t.message, Toast.LENGTH_LONG).show()
-//                }
-//            })
         }
 
 
@@ -101,7 +73,5 @@ class SignupActivity : AppCompatActivity() {
 
     }
 
-//    private fun registerUser(email: String, password: String) {
-//
-//    }
+
 }
